@@ -2213,6 +2213,10 @@ img {
   background-color: #f0f3f4;
 }
 
+.banner__image {
+  padding-left: 150px !important;
+}
+
 .img-seo {
   -webkit-animation: mover 1.7s infinite alternate;
   animation: mover 1.7s infinite alternate;
