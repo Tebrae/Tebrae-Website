@@ -7,9 +7,9 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <!-- Site Meta Data -->
-    <meta name="author" content="Click Down" />
-    <meta name="description" content="Click Down" />
-    <meta name="keywords" content="Click Down" />
+    <meta name="author" content="Tebrae" />
+    <meta name="description" content="Tebrae" />
+    <meta name="keywords" content="Tebrae" />
     <!-- Site Title -->
     <title>Tebrae</title>
     <!-- Favicon Link -->
@@ -124,7 +124,78 @@
                     </span>
                   </a>
                 </li>
-                <li class="nav-item">
+                <li><style>
+    /* CSS styles for the language selection */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+    .lang-dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .lang-btn {
+      font-family: 'Roboto', sans-serif;
+      background-color: #5921b8;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 20px;
+    }
+
+    .lang-dropdown-content {
+      font-family: 'Roboto', sans-serif;
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      padding: 10px;
+    }
+
+    .lang-dropdown-content a {
+      display: block;
+      padding: 8px 0;
+      color: black;
+      text-decoration: none;
+    }
+
+    .lang-dropdown-content a:hover {
+      color: #5921b8;
+    }
+
+    .lang-dropdown:hover .lang-dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<li>
+  <div class="lang-dropdown">
+    <button class="lang-btn" id="lang-btn"><i class="fas fa-globe"></i></button>
+    <div class="lang-dropdown-content">
+      <a class="lang-option" onclick="changeLanguage('ئینگلیزی')" href="index.html" >ئینگلیزی</a>
+      <a class="lang-option" onclick="changeLanguage('عەرەبی')" href="index - ar.html" >عەرەبی</a>
+      <a class="lang-option" onclick="changeLanguage('کوردی')">کوردی</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script>
+    // JavaScript code for changing the language
+    function changeLanguage(language) {
+      const langBtn = document.getElementById('lang-btn');
+
+      // Update the language button icon
+      langBtn.innerHTML = '<i class="fas fa-globe"></i>';
+
+      // Add code here for changing the language based on the selected language
+
+      // Example code for displaying a success message
+      console.log(`Language changed to ${language}`);
+    }
+  </script> </li>
+                <!-- <li class="nav-item">
                   <a
                   id="nav"
                     class="nav-link"
@@ -133,7 +204,7 @@
                     data-target="#contactModal"
                     >تواصل</a
                   >
-                </li>
+                </li> -->
               </ul>
               <ul class="nav navbar-btn-nav">
                 <!-- <li class="nav-item">
@@ -144,8 +215,7 @@
 
                     href="javascript:void(0)"
                     class="nav-btn nav-btn--signup"
-                    data-toggle="modal"
-                    data-target="#signUpModal"
+
                     >Naxoshm</a
                   >
                 </li>
@@ -181,7 +251,7 @@
             <div class="col-lg-5">
               <h1 class="banner__title">
                 <span class="d-lg-block">
-تيبرا هي العمود الفقري الرقمي الذي تفتقر اليه عيادتك وعلاماك التجارية
+تيبرا هي العمود الفقري الذي تفتقر اليه عيادتك وعلاماك التجارية
 
               </h1>
               <p class="banner__text">
@@ -206,13 +276,13 @@
                 </div>
               </form>
               <div class="banner__btn-wrapper">
-                <button
+                <!-- <button
                   class="primary-btn primary-btn--primary dark-hover"
                   data-toggle="modal"
                   data-target="#signUpModal"
                 >
                  ابدء الان
-                </button>
+                </button> -->
               </div>
               <div class="banner__review-wrapper">
                 <ul class="banner__review__list nav">
@@ -466,13 +536,13 @@
                           </li>
                         </ul> -->
                       </div>
-                      <button
+                      <!-- <button
                         class="primary-btn primary-btn--pink dark-hover"
                         data-toggle="modal"
                         data-target="#signUpModal"
                       >
                       ابدء الان
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -533,13 +603,13 @@
                           </li>
                         </ul> -->
                       </div>
-                      <button
+                      <!-- <button
                         class="primary-btn primary-btn--pink dark-hover"
                         data-toggle="modal"
                         data-target="#signUpModal"
                       >
                         ابدء الان
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -601,13 +671,13 @@
                           </li>
                         </ul> -->
                       </div>
-                      <button
+                      <!-- <button
                         class="primary-btn primary-btn--pink dark-hover"
                         data-toggle="modal"
                         data-target="#signUpModal"
                       >
                         ابدء الان
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -956,7 +1026,7 @@
                         class="features__videos-wrapper features__videos-wrapper--positive-margin"
                       >
                         <video
-                          src="./assets/videos/features-3a.mp4"
+                          src="./assets/videos/website-shortAnimation1-Arabic.mp4"
                           poster="./assets/images/videos-poster/poster tebrae.PNG"
                           class="features__videos w-100 h-100"
                           autoplay="autoplay"
@@ -964,7 +1034,7 @@
                           muted="muted"
                         >
                           <source
-                            src="./assets/images/videos-poster/poster tebrae.PNG"
+                            src="./assets/videos/website-shortAnimation1-Arabic.mp4"
                             type="video/mp4"
                           />
                         </video>
@@ -1639,13 +1709,13 @@
                           </div>
                         </li>
                       </ul>
-                      <button
+                      <!-- <button
                         class="primary-btn primary-btn--cyen dark-hover"
                         data-toggle="modal"
                         data-target="#signUpModal"
                       >
                     ابدء الان
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -1911,13 +1981,13 @@
                           </div>
                         </li> -->
                       </ul>
-                      <button
+                      <!-- <button
                         class="primary-btn primary-btn--cyen dark-hover"
                         data-toggle="modal"
                         data-target="#signUpModal"
                       >
                        ابدء الان
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -2314,18 +2384,17 @@
                     <div class="col-xl-7 offset-xl-1 col-lg-6 mb-5 mb-lg-0">
                       <div class="features__videos-wrapper">
                             <video
-                          src="./assets/videos/animation3_1.mp4"
+                          src="./assets/videos/animation3.mp4"
                           class="features__videos w-100 h-100"
                           autoplay="autoplay"
                           loop="true"
                           muted="muted"
                         >
                           <source
-                            src="./assets/videos/animation3_1.mp4"
+                            src="./assets/videos/animation3.mp4"
                             type="video/mp4"
                           />
                         </video>
-
                       </div>
                     </div>
                     <div class="col-xl-4 col-lg-6">
@@ -2459,13 +2528,13 @@ TEBRAE
                           </div>
                         </li> -->
                       </ul>
-                      <button
+                      <!-- <button
                         class="primary-btn primary-btn--cyen dark-hover"
                         data-toggle="modal"
                         data-target="#signUpModal"
                       >
                         ابدء الان
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -3131,19 +3200,18 @@ TEBRAE
                 <p class="footer__card__text">
                 شارك مع Tebrae
 
- واختبر تأثير استراتيجيات المحتوى الاحترافية القائمة على البيانات والمستنيرة طبيًا.
-لنتحدث
+ واختبر تأثير استراتيجيات المحتوى الاحترافية القائمة على البيانات والمستنيرة طبیا.
 
                 </p>
               </div>
               <div class="footer__card__btn-wrapper">
-                <button
+                <!-- <button
                   class="primary-btn primary-btn--primary dark-hover"
                   data-toggle="modal"
                   data-target="#signUpModal"
                 >
                   لنتحدث
-                </button>
+                </button> -->
               </div>
             </div>
             <div class="row justify-content-center">

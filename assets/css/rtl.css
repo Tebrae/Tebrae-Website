@@ -32,15 +32,46 @@
   font-weight: normal;
   font-style: normal;
 } */
+.footer__social-list__item:not(:first-child) {
+  margin-left: 0.3125rem;
+}
+
+.footer__social-list__link {
+  padding: 0.125rem;
+  color: #ffffff;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  -o-transition: -o-transform 0.2s ease-in-out;
+  -moz-transition: transform 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out,
+    -moz-transform 0.2s ease-in-out, -o-transform 0.2s ease-in-out;
+}
+
+.footer__social-list__link__image {
+  max-width: 1.875rem;
+}
+
+.footer__social-list__link:hover,
+.footer__social-list__link:focus-visible {
+  -webkit-transform: translateY(-20%);
+  -moz-transform: translateY(-20%);
+  -ms-transform: translateY(-20%);
+  -o-transform: translateY(-20%);
+  transform: translateY(-20%);
+}
+
+* {
+  font-family: "nrt" !important;
+}
 
 @font-face {
-  font-family: "Helectrineue";
-  src: url("../fonts/HelveticaNeueHv.ttf"),
-    url("../fonts/HelveticaNeueIt.ttf") format("truetype"),
-    url("../fonts/HelveticaNeueMed.ttf") format("truetype"),
-    url("../fonts/freefontsdownload.txt") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "nrt";
+  src: url("../fonts/NRT-Reg.ttf") format("truetype");
+}
+
+.footer__icon-card__content {
+  padding-right: 10px;
 }
 
 @font-face {
@@ -206,4 +237,54 @@ body.rtl {
 
 .banner {
   margin-bottom: 200px !important;
+}
+
+.footer__copyright__link::before {
+  content: "|";
+  margin: 0 0.3125rem;
+}
+
+.footer__copyright__link:hover,
+.footer__copyright__link:focus-visible {
+  text-decoration: underline;
+}
+
+.row2 .social {
+  margin-right: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.9rem;
+  margin-top: 1.5rem;
+}
+
+.row2 .social a {
+  font-size: 1.7rem;
+}
+.row2 a i {
+  scale: 1;
+  transition: all 0.3s;
+  color: var(--footercontentclr);
+}
+.row2 .social a i:hover {
+  scale: 1.2;
+}
+.row2 > h5 {
+  padding: 1.875rem 0;
+  color: var(--footercontentclr);
+  letter-spacing: 0.3rem;
+}
+
+.row2 {
+  color: white;
+  scale: 1.2;
+  margin-right: 30px;
+}
+
+.footer-brand__logo {
+  padding-left: 380px;
+}
+
+.footer__copyright {
+  padding-left: 300px;
 }

@@ -60,9 +60,24 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QZFHPSNYBF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QZFHPSNYBF');
+</script>
   </head>
-  <body>
+  <body onload="myFunction()">
+
+    <div id="loading"></div>
+
     <!-- Header & Banner Wrapper Section -->
     <div class="banner-wrapper position-relative overflow-hidden">
       <!-- Header Section -->
@@ -118,7 +133,78 @@
                     </span>
                   </a>
                 </li>
-                <li class="nav-item">
+                <!-- <li>  <style>
+    /* CSS styles for the language selection */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+    .lang-dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .lang-btn {
+      font-family: 'Roboto', sans-serif;
+      background-color: #5921b8;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 20px;
+    }
+
+    .lang-dropdown-content {
+      font-family: 'Roboto', sans-serif;
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      padding: 10px;
+    }
+
+    .lang-dropdown-content a {
+      display: block;
+      padding: 8px 0;
+      color: black;
+      text-decoration: none;
+    }
+
+    .lang-dropdown-content a:hover {
+      color: #5921b8;
+    }
+
+    .lang-dropdown:hover .lang-dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<li>
+  <div class="lang-dropdown">
+    <button class="lang-btn" id="lang-btn"><i class="fas fa-globe"></i></button>
+    <div class="lang-dropdown-content">
+      <a class="lang-option" onclick="changeLanguage('English')" href="index.html" >English</a>
+      <a class="lang-option" onclick="changeLanguage('Arabic')" href="index - ar.html" >Arabic</a>
+      <a class="lang-option" onclick="changeLanguage('Kurdish')">Kurdish</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script>
+    // JavaScript code for changing the language
+    function changeLanguage(language) {
+      const langBtn = document.getElementById('lang-btn');
+
+      // Update the language button icon
+      langBtn.innerHTML = '<i class="fas fa-globe"></i>';
+
+      // Add code here for changing the language based on the selected language
+
+      // Example code for displaying a success message
+      console.log(`Language changed to ${language}`);
+    }
+  </script> </li> -->
+                <!-- <li class="nav-item">
                   <a
                     class="nav-link"
                     href="javascript:void(0)"
@@ -126,7 +212,7 @@
                     data-target="#contactModal"
                     >Contact</a
                   >
-                </li>
+                </li> -->
               </ul>
               <ul class="nav navbar-btn-nav">
                 <!-- <li class="nav-item">
@@ -134,10 +220,9 @@
                 </li> -->
                 <li class="nav-item">
                   <a
-                    href="javascript:void(0)"
+
                     class="nav-btn nav-btn--signup"
-                    data-toggle="modal"
-                    data-target="#signUpModal"
+
                     >Naxoshm</a
                   >
                 </li>
@@ -198,13 +283,13 @@
                 </div>
               </form>
               <div class="banner__btn-wrapper">
-                <button
+                <!-- <button
                   class="primary-btn primary-btn--primary dark-hover"
                   data-toggle="modal"
                   data-target="#signUpModal"
                 >
                   Get Started
-                </button>
+                </button> -->
               </div>
               <div class="banner__review-wrapper">
                 <ul class="banner__review__list nav">
@@ -417,7 +502,7 @@
                           src="./assets/videos/Trello-Record.mp4"
                           poster="./assets/"
                           class="features__videos w-100 h-100"
-                          autoplay="autoplay"
+                          autoplay= "true"
                           loop="true"
                           muted="muted"
                         >
@@ -459,13 +544,13 @@
                           </li>
                         </ul> -->
                       </div>
-                      <button
+                      <!-- <button
                         class="primary-btn primary-btn--pink dark-hover"
                         data-toggle="modal"
                         data-target="#signUpModal"
                       >
                         Get Started
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -526,13 +611,13 @@
                           </li>
                         </ul> -->
                       </div>
-                      <button
+                      <!-- <button
                         class="primary-btn primary-btn--pink dark-hover"
                         data-toggle="modal"
                         data-target="#signUpModal"
                       >
                         Get Started
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -592,13 +677,13 @@
                           </li>
                         </ul> -->
                       </div>
-                      <button
+                      <!-- <button
                         class="primary-btn primary-btn--pink dark-hover"
                         data-toggle="modal"
                         data-target="#signUpModal"
                       >
                         Get Started
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -649,13 +734,13 @@
                           </li>
                         </ul> -->
                       </div>
-                      <button
+                      <!-- <button
                         class="primary-btn primary-btn--pink dark-hover"
                         data-toggle="modal"
                         data-target="#signUpModal"
                       >
                         Get Started
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -688,7 +773,7 @@
                     role="tab"
                     aria-controls="pills-docs"
                     aria-selected="true"
-                    >Digital marketing expertise </a
+                    >Marketing </a
                   >
                 </li>
                 <li class="nav-item" role="presentation">
@@ -700,7 +785,7 @@
                     role="tab"
                     aria-controls="pills-whiteboards"
                     aria-selected="false"
-                    >Medical Knowledge</a
+                    >Healthcare </a
                   >
                 </li>
                 <li class="nav-item" role="presentation">
@@ -817,16 +902,13 @@ A single healthcare platform to achieve more with less work
             </div>
           </div>
         </div>
-        <button
+        <!-- <button
           class="features__btn w-100"
           data-toggle="modal"
           data-target="#signUpModal"
         >
-          <!-- <span class="features__btn__text d-inline-flex align-items-center"
-            >
-            <i class="features__btn__icon"></i
-          ></span> -->
-        </button>
+
+        </button> -->
       </div>
     </section>
 
@@ -1018,386 +1100,15 @@ A single healthcare platform to achieve more with less work
                           />
                         </video>
                       </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 pr-xl-0">
-                      <div
-                        class="features__icon-block d-inline-flex align-items-center justify-content-center"
-                      >
-                        <svg
-                          width="28"
-                          height="31"
-                          viewBox="0 0 28 31"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M11.73 13.8844L11.73 27.1252L24.9707 27.1252L24.9707 13.8844H11.73ZM24.9707 10.8751C26.6327 10.8751 27.98 12.2224 27.98 13.8844V27.1252C27.98 28.7871 26.6327 30.1344 24.9707 30.1344H11.73C10.068 30.1344 8.7207 28.7871 8.7207 27.1252V24.2546C8.34421 24.1469 7.97526 24.0214 7.61484 23.8789C6.97387 23.6256 6.35986 23.3189 5.7783 22.9642C2.31324 20.8511 0 17.0368 0 12.6806C0 6.03273 5.38918 0.643555 12.0371 0.643555C14.7433 0.643555 17.2409 1.5366 19.2513 3.04407C21.5976 4.80345 23.2803 7.39975 23.8564 10.39C23.8874 10.5506 23.9151 10.7123 23.9396 10.8751H24.9707ZM8.7207 21.0803C7.58727 20.6324 6.56618 19.9616 5.71143 19.1219C4.47076 17.903 3.58055 16.3285 3.20601 14.5638C3.07708 13.9563 3.00927 13.3263 3.00927 12.6806C3.00927 7.6947 7.05115 3.65282 12.0371 3.65282C15.2529 3.65282 18.076 5.33423 19.6752 7.86587C20.2479 8.77262 20.6637 9.78843 20.8843 10.8751H11.73C10.068 10.8751 8.7207 12.2224 8.7207 13.8844V21.0803Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </div>
-                      <h3 class="features__sub-title text-uppercase">
-                        the platform
-                      </h3>
-                      <h2 class="features__title">
-                        Get more work done, wherever you are.
-                      </h2>
-                      <p class="features__text">
-                        Access ClickUp on any device—mobile, desktop, voice
-                        assistants, and more to get work done from anywhere.
-                      </p>
-                    </div>
+
                   </div>
                 </div>
-                <div
-                  class="tab-pane fade"
-                  id="pills-clickApps"
-                  role="tabpanel"
-                  aria-labelledby="pills-clickApps-tab"
-                >
-                  <div class="row flex-lg-row-reverse">
-                    <div class="col-xl-7 offset-xl-1 col-lg-6">
-                      <div
-                        class="features__videos-wrapper features__videos-wrapper--positive-margin"
-                      >
-                        <img
-                          src="./assets/images/features/features-3c.png"
-                          alt="features image"
-                          class="w-100 h-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 px-xl-0">
-                      <div
-                        class="features__icon-block d-inline-flex align-items-center justify-content-center"
-                      >
-                        <svg
-                          width="28"
-                          height="31"
-                          viewBox="0 0 28 31"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M11.73 13.8844L11.73 27.1252L24.9707 27.1252L24.9707 13.8844H11.73ZM24.9707 10.8751C26.6327 10.8751 27.98 12.2224 27.98 13.8844V27.1252C27.98 28.7871 26.6327 30.1344 24.9707 30.1344H11.73C10.068 30.1344 8.7207 28.7871 8.7207 27.1252V24.2546C8.34421 24.1469 7.97526 24.0214 7.61484 23.8789C6.97387 23.6256 6.35986 23.3189 5.7783 22.9642C2.31324 20.8511 0 17.0368 0 12.6806C0 6.03273 5.38918 0.643555 12.0371 0.643555C14.7433 0.643555 17.2409 1.5366 19.2513 3.04407C21.5976 4.80345 23.2803 7.39975 23.8564 10.39C23.8874 10.5506 23.9151 10.7123 23.9396 10.8751H24.9707ZM8.7207 21.0803C7.58727 20.6324 6.56618 19.9616 5.71143 19.1219C4.47076 17.903 3.58055 16.3285 3.20601 14.5638C3.07708 13.9563 3.00927 13.3263 3.00927 12.6806C3.00927 7.6947 7.05115 3.65282 12.0371 3.65282C15.2529 3.65282 18.076 5.33423 19.6752 7.86587C20.2479 8.77262 20.6637 9.78843 20.8843 10.8751H11.73C10.068 10.8751 8.7207 12.2224 8.7207 13.8844V21.0803Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </div>
-                      <h3 class="features__sub-title text-uppercase">
-                        the platform
-                      </h3>
-                      <h2 class="features__title">
-                        Customize tasks for any need.
-                      </h2>
-                      <p class="features__text">
-                        Customize ClickUp to tackle any project or task with 35+
-                        ClickApps. Break down work with subtasks, assign Sprint
-                        Points, link tasks to other items with Relationships,
-                        and more.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="pills-integrations"
-                  role="tabpanel"
-                  aria-labelledby="pills-integrations-tab"
-                >
-                  <div class="row flex-lg-row-reverse">
-                    <div class="col-xl-8 col-lg-6">
-                      <div class="features__integrations-wrapper">
-                        <a
-                          href="#!"
-                          class="features__integrations__card d-inline-flex align-items-center justify-content-center"
-                        >
-                          <img
-                            src="./assets/images/integrations/integrations-1.svg"
-                            alt="integrations image"
-                            class="features__integrations__card__image w-100"
-                          />
-                        </a>
-                        <a
-                          href="#!"
-                          class="features__integrations__card d-inline-flex align-items-center justify-content-center"
-                        >
-                          <img
-                            src="./assets/images/integrations/integrations-2.png"
-                            alt="integrations image"
-                            class="features__integrations__card__image w-100"
-                          />
-                        </a>
-                        <a
-                          href="#!"
-                          class="features__integrations__card d-inline-flex align-items-center justify-content-center"
-                        >
-                          <img
-                            src="./assets/images/integrations/integrations-3.svg"
-                            alt="integrations image"
-                            class="features__integrations__card__image w-100"
-                          />
-                        </a>
-                        <a
-                          href="#!"
-                          class="features__integrations__card d-inline-flex align-items-center justify-content-center"
-                        >
-                          <img
-                            src="./assets/images/integrations/integrations-4.svg"
-                            alt="integrations image"
-                            class="features__integrations__card__image w-100"
-                          />
-                        </a>
-                      </div>
-                      <div class="features__integrations-wrapper">
-                        <a
-                          href="#!"
-                          class="features__integrations__card d-inline-flex align-items-center justify-content-center"
-                        >
-                          <img
-                            src="./assets/images/integrations/integrations-5.svg"
-                            alt="integrations image"
-                            class="features__integrations__card__image w-100"
-                          />
-                        </a>
-                        <a
-                          href="#!"
-                          class="features__integrations__card d-inline-flex align-items-center justify-content-center"
-                        >
-                          <img
-                            src="./assets/images/integrations/integrations-6.png"
-                            alt="integrations image"
-                            class="features__integrations__card__image w-100"
-                          />
-                        </a>
-                        <a
-                          href="#!"
-                          class="features__integrations__card d-inline-flex align-items-center justify-content-center"
-                        >
-                          <img
-                            src="./assets/images/integrations/integrations-7.png"
-                            alt="integrations image"
-                            class="features__integrations__card__image w-100"
-                          />
-                        </a>
-                      </div>
-                      <div class="features__integrations-wrapper">
-                        <a
-                          href="#!"
-                          class="features__integrations__card d-inline-flex align-items-center justify-content-center"
-                        >
-                          <img
-                            src="./assets/images/integrations/integrations-8.png"
-                            alt="integrations image"
-                            class="features__integrations__card__image w-100"
-                          />
-                        </a>
-                        <a
-                          href="#!"
-                          class="features__integrations__card d-inline-flex align-items-center justify-content-center"
-                        >
-                          <img
-                            src="./assets/images/integrations/integrations-9.png"
-                            alt="integrations image"
-                            class="features__integrations__card__image w-100"
-                          />
-                        </a>
-                        <a
-                          href="#!"
-                          class="features__integrations__card d-inline-flex align-items-center justify-content-center"
-                        >
-                          <img
-                            src="./assets/images/integrations/integrations-10.png"
-                            alt="integrations image"
-                            class="features__integrations__card__image w-100"
-                          />
-                        </a>
-                        <a
-                          href="#!"
-                          class="features__integrations__card d-inline-flex align-items-center justify-content-center"
-                        >
-                          <img
-                            src="./assets/images/integrations/integrations-11.svg"
-                            alt="integrations image"
-                            class="features__integrations__card__image w-100"
-                          />
-                        </a>
-                      </div>
-                      <div class="features__integrations-wrapper">
-                        <a
-                          href="#!"
-                          class="features__integrations__card d-inline-flex align-items-center justify-content-center"
-                        >
-                          <img
-                            src="./assets/images/integrations/integrations-12.png"
-                            alt="integrations image"
-                            class="features__integrations__card__image w-100"
-                          />
-                        </a>
-                        <a
-                          href="#!"
-                          class="features__integrations__card d-inline-flex align-items-center justify-content-center"
-                        >
-                          <img
-                            src="./assets/images/integrations/integrations-13.png"
-                            alt="integrations image"
-                            class="features__integrations__card__image w-100"
-                          />
-                        </a>
-                        <a
-                          href="#!"
-                          class="features__integrations__card d-inline-flex align-items-center justify-content-center"
-                        >
-                          <img
-                            src="./assets/images/integrations/integrations-14.svg"
-                            alt="integrations image"
-                            class="features__integrations__card__image w-100"
-                          />
-                        </a>
-                      </div>
-                      <div class="features__integrations-wrapper">
-                        <a
-                          href="#!"
-                          class="features__integrations__card d-inline-flex align-items-center justify-content-center"
-                        >
-                          <img
-                            src="./assets/images/integrations/integrations-15.svg"
-                            alt="integrations image"
-                            class="features__integrations__card__image w-100"
-                          />
-                        </a>
-                        <a
-                          href="#!"
-                          class="features__integrations__card d-inline-flex align-items-center justify-content-center"
-                        >
-                          <img
-                            src="./assets/images/integrations/integrations-16.png"
-                            alt="integrations image"
-                            class="features__integrations__card__image w-100"
-                          />
-                        </a>
-                        <a
-                          href="#!"
-                          class="features__integrations__card d-inline-flex align-items-center justify-content-center"
-                        >
-                          <img
-                            src="./assets/images/integrations/integrations-17.png"
-                            alt="integrations image"
-                            class="features__integrations__card__image w-100"
-                          />
-                        </a>
-                        <a
-                          href="#!"
-                          class="features__integrations__card d-inline-flex align-items-center justify-content-center"
-                        >
-                          <img
-                            src="./assets/images/integrations/integrations-18.svg"
-                            alt="integrations image"
-                            class="features__integrations__card__image w-100"
-                          />
-                        </a>
-                      </div>
-                      <div class="features__integrations-wrapper text-center">
-                        <a
-                          href="#!"
-                          class="features__integrations__btn d-inline-block"
-                        >
-                          100+ more integrations.
-                          <span class="primary-text">See all</span>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 px-xl-0">
-                      <div
-                        class="features__icon-block d-inline-flex align-items-center justify-content-center"
-                      >
-                        <svg
-                          width="28"
-                          height="31"
-                          viewBox="0 0 28 31"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M11.73 13.8844L11.73 27.1252L24.9707 27.1252L24.9707 13.8844H11.73ZM24.9707 10.8751C26.6327 10.8751 27.98 12.2224 27.98 13.8844V27.1252C27.98 28.7871 26.6327 30.1344 24.9707 30.1344H11.73C10.068 30.1344 8.7207 28.7871 8.7207 27.1252V24.2546C8.34421 24.1469 7.97526 24.0214 7.61484 23.8789C6.97387 23.6256 6.35986 23.3189 5.7783 22.9642C2.31324 20.8511 0 17.0368 0 12.6806C0 6.03273 5.38918 0.643555 12.0371 0.643555C14.7433 0.643555 17.2409 1.5366 19.2513 3.04407C21.5976 4.80345 23.2803 7.39975 23.8564 10.39C23.8874 10.5506 23.9151 10.7123 23.9396 10.8751H24.9707ZM8.7207 21.0803C7.58727 20.6324 6.56618 19.9616 5.71143 19.1219C4.47076 17.903 3.58055 16.3285 3.20601 14.5638C3.07708 13.9563 3.00927 13.3263 3.00927 12.6806C3.00927 7.6947 7.05115 3.65282 12.0371 3.65282C15.2529 3.65282 18.076 5.33423 19.6752 7.86587C20.2479 8.77262 20.6637 9.78843 20.8843 10.8751H11.73C10.068 10.8751 8.7207 12.2224 8.7207 13.8844V21.0803Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </div>
-                      <h3 class="features__sub-title text-uppercase">
-                        the platform
-                      </h3>
-                      <h2 class="features__title">
-                        Bring all of your tools into one place.
-                      </h2>
-                      <p class="features__text">
-                        If you're not ready replace all your tools, ClickUp can
-                        integrate with them with native and third-party
-                        integrations. Sync your team calendars, messaging apps,
-                        cloud storage, and more to keep everything in one place.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="pills-automations"
-                  role="tabpanel"
-                  aria-labelledby="pills-automations-tab"
-                >
-                  <div class="row flex-lg-row-reverse">
-                    <div class="col-xl-7 offset-xl-1 col-lg-6">
-                      <div
-                        class="features__videos-wrapper features__videos-wrapper--positive-margin"
-                      >
-                        <img
-                          src="./assets/images/features/features-3e.png"
-                          alt="features image"
-                          class="features__image w-100 h-100"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6">
-                      <div
-                        class="features__icon-block d-inline-flex align-items-center justify-content-center"
-                      >
-                        <svg
-                          width="28"
-                          height="31"
-                          viewBox="0 0 28 31"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M11.73 13.8844L11.73 27.1252L24.9707 27.1252L24.9707 13.8844H11.73ZM24.9707 10.8751C26.6327 10.8751 27.98 12.2224 27.98 13.8844V27.1252C27.98 28.7871 26.6327 30.1344 24.9707 30.1344H11.73C10.068 30.1344 8.7207 28.7871 8.7207 27.1252V24.2546C8.34421 24.1469 7.97526 24.0214 7.61484 23.8789C6.97387 23.6256 6.35986 23.3189 5.7783 22.9642C2.31324 20.8511 0 17.0368 0 12.6806C0 6.03273 5.38918 0.643555 12.0371 0.643555C14.7433 0.643555 17.2409 1.5366 19.2513 3.04407C21.5976 4.80345 23.2803 7.39975 23.8564 10.39C23.8874 10.5506 23.9151 10.7123 23.9396 10.8751H24.9707ZM8.7207 21.0803C7.58727 20.6324 6.56618 19.9616 5.71143 19.1219C4.47076 17.903 3.58055 16.3285 3.20601 14.5638C3.07708 13.9563 3.00927 13.3263 3.00927 12.6806C3.00927 7.6947 7.05115 3.65282 12.0371 3.65282C15.2529 3.65282 18.076 5.33423 19.6752 7.86587C20.2479 8.77262 20.6637 9.78843 20.8843 10.8751H11.73C10.068 10.8751 8.7207 12.2224 8.7207 13.8844V21.0803Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </div>
-                      <h3 class="features__sub-title text-uppercase">
-                        the platform
-                      </h3>
-                      <h2 class="features__title">
-                        Save time by automating your work.
-                      </h2>
-                      <p class="features__text">
-                        Eliminate the busywork and focus on what matters with
-                        hundreds of Automations. Automatically assign tasks,
-                        post comments, update statuses, and sync with other
-                        tools.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+                <!---->
+
+
+
+                             </div>
             </div>
           </div>
         </div>
@@ -1406,10 +1117,7 @@ A single healthcare platform to achieve more with less work
           data-toggle="modal"
           data-target="#signUpModal"
         >
-          <!-- <span class="features__btn__text d-inline-flex align-items-center"
-            >
-            <i class="features__btn__icon" ></i
-          ></span> -->
+
         </button>
       </div>
     </section>
@@ -1506,6 +1214,9 @@ A single healthcare platform to achieve more with less work
                 >
                   <div class="row flex-lg-row-reverse">
                     <div class="col-xl-7 offset-xl-1 col-lg-6 mb-5 mb-lg-0">
+
+
+
                       <div class="features__videos-wrapper">
                           <video
                           src="./assets/images/Services/animation2.mp4"
@@ -1562,10 +1273,10 @@ A single healthcare platform to achieve more with less work
                           </div>
                         </li>
                         <li class="features__details-list__item d-flex">
-                          <!-- <div
+                          <div
                             class="features__details-list__item__icon-block flex-shrink-0 d-inline-flex align-items-center justify-content-center"
                           >
-                            <svg
+                            <!-- <svg
                               fill="none"
                               height="30"
                               viewBox="0 0 30 30"
@@ -1578,23 +1289,20 @@ A single healthcare platform to achieve more with less work
                                 fill="#2a2e34"
                                 fill-rule="evenodd"
                               ></path>
-                            </svg>
-                          </div> -->
-                          <!-- <div class="features__details-list__item__content">
+                            </svg> -->
+                          </div>
+                          <div class="features__details-list__item__content">
                             <h4
                               class="features__details-list__item__content__title"
                             >
-                              Collaborate
+                              outrank your competitors
                             </h4>
                             <p
                               class="features__details-list__item__content__text"
                             >
-                              Work with your team in real-time with Chat, assign
-                              comments for action items, and never miss a beat
-                              with notifications that bring everything in one
-                              place.
+                           Our dedicated team of SEO professionals is equipped with the latest tools and techniques to optimize your website for search engines and drive organic traffic to your online presence
                             </p>
-                          </div> -->
+                          </div>
                         </li>
                         <li class="features__details-list__item d-flex">
                           <div
@@ -1631,13 +1339,13 @@ A single healthcare platform to achieve more with less work
                           </div>
                         </li>
                       </ul>
-                      <button
+                      <!-- <button
                         class="primary-btn primary-btn--cyen dark-hover"
                         data-toggle="modal"
                         data-target="#signUpModal"
                       >
                         Get Started
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -1763,13 +1471,13 @@ A single healthcare platform to achieve more with less work
                           </div>
                         </li>
                       </ul>
-                      <button
+                      <!-- <button
                         class="primary-btn primary-btn--cyen dark-hover"
                         data-toggle="modal"
                         data-target="#signUpModal"
                       >
                         Get Started
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -1901,13 +1609,13 @@ A single healthcare platform to achieve more with less work
                           </div>
                         </li> -->
                       </ul>
-                      <button
+                      <!-- <button
                         class="primary-btn primary-btn--cyen dark-hover"
                         data-toggle="modal"
                         data-target="#signUpModal"
                       >
                         Get Started
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -2027,13 +1735,13 @@ A single healthcare platform to achieve more with less work
                           </div>
                         </li>
                       </ul>
-                      <button
+                      <!-- <button
                         class="primary-btn primary-btn--cyen dark-hover"
                         data-toggle="modal"
                         data-target="#signUpModal"
                       >
                         Get Started
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -2157,13 +1865,13 @@ A single healthcare platform to achieve more with less work
                           </div>
                         </li>
                       </ul>
-                      <button
+                      <!-- <button
                         class="primary-btn primary-btn--cyen dark-hover"
                         data-toggle="modal"
                         data-target="#signUpModal"
                       >
                         Get Started
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -2284,13 +1992,13 @@ A single healthcare platform to achieve more with less work
                           </div>
                         </li>
                       </ul>
-                      <button
+                      <!-- <button
                         class="primary-btn primary-btn--cyen dark-hover"
                         data-toggle="modal"
                         data-target="#signUpModal"
                       >
                         Get Started
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -2304,7 +2012,7 @@ A single healthcare platform to achieve more with less work
                     <div class="col-xl-7 offset-xl-1 col-lg-6 mb-5 mb-lg-0">
                       <div class="features__videos-wrapper">
                             <video
-                          src="./assets/videos/animation3_1.mp4"
+                          src="./assets/videos/animation3.mp4"
                           class="features__videos w-100 h-100"
                           autoplay="autoplay"
                           loop="true"
@@ -2448,13 +2156,13 @@ A single healthcare platform to achieve more with less work
                           </div>
                         </li> -->
                       </ul>
-                      <button
+                      <!-- <button
                         class="primary-btn primary-btn--cyen dark-hover"
                         data-toggle="modal"
                         data-target="#signUpModal"
                       >
                         Get Started
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -2712,13 +2420,13 @@ A single healthcare platform to achieve more with less work
                           </div>
                         </li>
                       </ul>
-                      <button
+                      <!-- <button
                         class="primary-btn primary-btn--cyen dark-hover"
                         data-toggle="modal"
                         data-target="#signUpModal"
                       >
                         Get Started
-                      </button>
+                      </button> -->
                     </div>
                   </div>
                 </div>
@@ -3128,13 +2836,13 @@ A single healthcare platform to achieve more with less work
                 </p>
               </div>
               <div class="footer__card__btn-wrapper">
-                <button
+                <!-- <button
                   class="primary-btn primary-btn--primary dark-hover"
                   data-toggle="modal"
                   data-target="#signUpModal"
                 >
                   Lets Talk!
-                </button>
+                </button> -->
               </div>
             </div>
             <div class="row justify-content-center">
@@ -3405,14 +3113,14 @@ A single healthcare platform to achieve more with less work
                     href="#!"
                     class="footer-brand d-inline-flex align-items-center"
                   >
-                    <img
+                    <!-- <img
                       src="./assets/images/logo/logo-dark.png"
                       alt="logo-mark"
                       class="footer-brand__logo w-100"
-                    />
-                    <!-- <span class="footer-brand__text d-inline-block"
-                      >Tebrae</span
-                    > -->
+                    /> -->
+                    <span class="footer-brand__text d-inline-block"
+                      >TEBRAE</span
+                    >
                   </a>
                   <p class="footer__copyright mb-0 mt-2">
                     © 2023 Tebrae
@@ -3442,7 +3150,7 @@ A single healthcare platform to achieve more with less work
                                 <a href="https://www.instagram.com/tebrae.krd/?fbclid=IwAR1P8BbuIbt6keJ2kpwlEXrswgX4XtlgJT535S-Hdgi6n3NsOLDKN6Rb8to" target="_blank"><i
                                         class="fab fa-instagram"></i></a>
                                 <a href="https://twitter.com/tebraeco?fbclid=IwAR3qxmV8BVVfvifTIR3aX_HLbw1M6SjrA7SqC409o21vQ9dSczhOoRCoPao" target="_blank"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.linkedin.com/company/tebrae/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/company/tebrae/" target="_blank"><i class="fab fa-linkedin-in" id="linkedin"></i></a>
                                <a href="https://www.tiktok.com/@tebraeco" target="_blank"><i class="fab fa-tiktok"></i></a>
                                 <a href="https://www.youtube.com/channel/UCn0oU0-aRb0UWPfSsQdrBsw" target="_blank"><i class="fab fa-youtube"></i></a>
                             </div>
@@ -3655,6 +3363,20 @@ A single healthcare platform to achieve more with less work
         <i data-feather="chevron-up"></i>
       </button>
     </div>
+
+<script>
+		// $(document).ready(function(){
+			// 	$('div#loading').removeAttr('id');
+		// });
+		var preloader = document.getElementById("loading");
+		// window.addEventListener('load', function(){
+		// 	preloader.style.display = 'none';
+		// 	})
+
+		function myFunction(){
+			preloader.style.display = 'none';
+		};
+	</script>
 
     <!-- All Scripts -->
     <script src="./assets/js/jquery-1.12.4.min.js"></script>
