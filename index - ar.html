@@ -62,8 +62,21 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css" />
        <link rel="stylesheet" href="./assets/css/rtl.css" />
+           <link rel="icon" href="/assets/images/banner/TebraeLOGOLINES-1.png" type="image/png">
+             <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QZFHPSNYBF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QZFHPSNYBF');
+</script>
   </head>
-  <body class="rtl">
+  <body class="rtl"onload="myFunction()">
+
+      <div id="loading"></div>
+
     <!-- Header & Banner Wrapper Section -->
     <div class="banner-wrapper position-relative overflow-hidden">
       <!-- Header Section -->
@@ -558,7 +571,7 @@
                         class="features__videos-wrapper features__videos-wrapper--negative-margin"
                       >
                         <video
-                          src="./assets/images/Services/video-output-4BC83D4E-A680-4A63-867E-3D8837218AA9 (1).mp4"
+                          src="./assets/videos/06.07.2023_09.11.20_REC.mp4"
                           poster="./assets/images/videos-poster/features-1b.png"
                           class="features__videos w-100 h-100"
                           autoplay="autoplay"
@@ -566,7 +579,7 @@
                           muted="muted"
                         >
                           <source
-                            src="./assets/images/Services/video-output-4BC83D4E-A680-4A63-867E-3D8837218AA9 (1).mp4"
+                            src="./assets/videos/06.07.2023_09.11.20_REC.mp4"
                             type="video/mp4"
                           />
                         </video>
@@ -3737,6 +3750,22 @@ TEBRAE
         <i data-feather="chevron-up"></i>
       </button>
     </div>
+
+
+<script>
+		// $(document).ready(function(){
+			// 	$('div#loading').removeAttr('id');
+		// });
+		var preloader = document.getElementById("loading");
+		// window.addEventListener('load', function(){
+		// 	preloader.style.display = 'none';
+		// 	})
+
+		function myFunction(){
+			preloader.style.display = 'none';
+		};
+	</script>
+
 
     <!-- All Scripts -->
     <script src="./assets/js/jquery-1.12.4.min.js"></script>
