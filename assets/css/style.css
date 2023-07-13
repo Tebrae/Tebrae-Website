@@ -3014,6 +3014,14 @@ img {
   scale: 1.2 !important;
 }
 
+.banner__review__partners {
+  margin-bottom: 20px;
+}
+
+.join-companies__title {
+  padding-top: 20px;
+}
+
 /* Media query for smaller screens */
 @media screen and (max-width: 992px) {
   .img4 {
@@ -3038,7 +3046,7 @@ img {
   }
 
   .footer-brand__logo {
-    padding: 30px;
+    margin-left: 80px;
   }
 }
 
@@ -3049,10 +3057,6 @@ img {
   .row2 .social {
     gap: 1.5rem;
     margin-top: 1rem;
-  }
-
-  .footer-brand__logo {
-    display: none;
   }
 }
 
