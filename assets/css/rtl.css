@@ -311,3 +311,25 @@ body.rtl {
     margin-right: 80px !important;
   }
 }
+
+@media screen and (max-width: 760px) {
+  .img4 {
+    display: none;
+  }
+
+  .row2 .social {
+    gap: 0.6rem;
+    margin-top: 1rem;
+    margin-left: 90px;
+    font-size: small;
+  }
+
+  .footer__copyright {
+    margin-right: 130px;
+    font-size: small;
+  }
+
+  .footer-brand__logo {
+    margin-right: 100px !important;
+  }
+}
