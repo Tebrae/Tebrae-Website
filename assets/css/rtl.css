@@ -239,7 +239,7 @@ body.rtl {
   margin-bottom: 200px !important;
 }
 
-.footer__copyright__link::before {
+/* .footer__copyright__link::before {
   content: "|";
   margin: 0 0.3125rem;
 }
@@ -287,4 +287,4 @@ body.rtl {
 
 .footer__copyright {
   padding-left: 300px;
-}
+} */
