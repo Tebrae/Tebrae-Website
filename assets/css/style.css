@@ -3612,3 +3612,40 @@ img {
     overflow-y: hidden;
   }
 }
+
+@media (max-width: 780px) {
+  body {
+    /* Adjust the zoom level as needed */
+    overflow-x: hidden !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .features--green .features__videos-wrapper {
+    padding-bottom: 40px; /* Add 20px padding to the video container */
+  }
+
+  .scroll-top {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .features--green .features__videos-wrapper {
+    padding-bottom: 40px; /* Add 20px padding to the video container */
+  }
+
+  body {
+    zoom: 160% !important; /* Adjust the zoom level as needed */
+  }
+
+  .scroll-top {
+    display: none !important;
+  }
+
+  .container-footer {
+    width: 3000px !important;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
