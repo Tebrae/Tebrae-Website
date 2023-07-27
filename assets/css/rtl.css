@@ -194,6 +194,7 @@ body.rtl {
   direction: rtl;
   text-align: right;
   font-family: "Helectrineue";
+  overflow-x: hidden;
 }
 
 .banner__image-wrapper {
@@ -313,7 +314,7 @@ body.rtl {
   }
 
   body {
-    zoom: 160% !important; /* Adjust the zoom level as needed */
+    zoom: none !important;
   }
 
   .scroll-top {
@@ -321,7 +322,7 @@ body.rtl {
   }
 
   .container-footer {
-    width: 3000px !important;
+    width: 100% !important;
     overflow-x: hidden;
     overflow-y: hidden;
   }
@@ -345,5 +346,15 @@ body.rtl {
 
   .footer-brand__logo {
     margin-right: 80px !important;
+  }
+
+  .nav-link {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* Banner Section Style */
+  .banner-wrapper::before {
+    background: none;
   }
 }
