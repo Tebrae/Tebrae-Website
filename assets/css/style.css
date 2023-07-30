@@ -3592,6 +3592,10 @@ img {
   .scroll-top {
     display: none !important;
   }
+
+  .accordion-title {
+    margin-right: 80px !important;
+  }
 }
 
 @media (max-width: 480px) {
