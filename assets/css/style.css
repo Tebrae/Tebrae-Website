@@ -2418,10 +2418,14 @@ img {
 }
 
 .features__title {
-  font-size: 1.75rem;
+  font-size: 0.5rem;
   font-weight: 800;
   line-height: 1.35417;
-  margin: 1.575rem 0;
+  margin: 1.875rem 0;
+}
+
+#video_space {
+  margin-top: 40px;
 }
 
 @media (min-width: 992px) {
@@ -2437,14 +2441,14 @@ img {
 }
 
 .features__sub-title {
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 1px;
 }
 
 .features__text {
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.78571;
 }
 
@@ -3471,12 +3475,9 @@ img {
 }
 
 .FAQ-SEC {
-  margin: 0;
-  padding: 0;
   background: #fff;
   color: #292d34;
   display: flex;
-  min-height: 100vh;
 }
 
 .container-FAQ {

@@ -222,13 +222,8 @@
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
-
-    gap: 10px; /* Adjust the gap between cards as needed */
-
-    /* Set the desired height for the container */
+    gap: 10px;
     height: auto;
-
-    /* Set the desired width for the container */
     width: 100%;
   }
 
@@ -243,4 +238,12 @@
     height: 200px; /* Set the height for all cards */
     width: 100%; /* Set the width for all cards */
   }
+}
+
+.banner__image {
+  margin-top: 40px;
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  animation: none !important;
 }
